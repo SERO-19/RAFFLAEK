@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(planet-2120004_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.menu-bar {
+    background-color: rgb(19, 20, 24);
+    opacity: .8;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120;
+    margin: 15;
+    padding: 15;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 30;
+}
+
+.menu-bar .fa {
+    margin-right: 8;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15;
+    margin-left: -15;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150;
+    padding: 10;
+    border-bottom: 1 dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: #b2ff00;
+}
+
+
+/*--------------------------------profile----------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#sidebar {
+    position: fixed;
+    width: 200;
+    height: 100;
+    left: -30;
+    background: #2bab0d;
+}
+
+.sidebar ul li {
+    color: rgb(167, 157, 157);
+    list-style: none;
+    padding: 15 10;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+.toggle-btn {
+    position: absolute;
+    left: 105;
+    top: 15;
+}
+
+.toggle-btn span {
+    display: block;
+    background-attachment: black;
+    width: 30;
+    margin: 3;
+}
+
+#sidebar.active {
+    left: 0;
+}
