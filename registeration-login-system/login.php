@@ -33,11 +33,11 @@
     } else {
 ?>
     <form class="form" method="post" name="login">
-        <h1 class="login-title">Login</h1>
+        <h1 class="login-title">เข้าสู่ระบบ</h1>
         <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
         <input type="password" class="login-input" name="password" placeholder="Password"/>
-        <input type="submit" value="Login" name="submit" class="login-button"/>
-        <p class="link">Don't have an account? <a href="registration.php">Registration Now</a></p>
+        <input type="submit" value="เข้าสู่ระบบ" name="submit" class="login-button"/>
+        <p class="link">สมาชิกใหม่? <a href="registration.php">ลงทะเบียน</a> ที่นี่</p>
   </form>
 <?php
     }
