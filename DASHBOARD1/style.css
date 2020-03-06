@@ -1,0 +1,226 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: sub;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ebebeb;
+    padding-top: 20px;
+}
+
+
+/*
+#Page {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 280px;
+    background: #f2f2f2;
+}
+
+.Main-page {
+    width: 100%;
+    height: 100%;
+}
+*/
+
+
+/*--------------------------------------------------------ปุ่ม-------------------------------------------------------------------------- */
+
+.btn {
+    display: inline-block;
+    padding: 6px 14px;
+    width: 30%;
+    background: #f2f2f2;
+    border-radius: 3px;
+    color: #7a7a7a;
+    font-size: 0.8125em;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+    background: rgba(76, 182, 55, 0.904);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary.active {
+    background: rgba(124, 172, 114, 0.747);
+    color: green;
+}
+
+.btn.btn-large {
+    padding: 12px 12px;
+}
+
+.btn.btn-caps {
+    text-transform: uppercase;
+}
+
+.btn.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn1 {
+    margin: auto;
+}
+
+
+/*--------------------------------------------------------ปุ่ม-------------------------------------------------------------------------- */
+
+.box {
+    background: #f9f9f9;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    color: rgba(76, 182, 55, 0.904);
+    font-size: 0.875em;
+}
+
+.box p {
+    font-size: 0.75em;
+    color: #7d7d7d;
+}
+
+.box1 {
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+    margin: auto 1000px auto auto;
+}
+
+.box1 .avatar {
+    border-radius: 50%;
+}
+
+.box1 .avatar img {
+    border-radius: 50%;
+}
+
+.box1 .details {
+    margin-top: 30px;
+}
+
+.box1 .btn {
+    margin-top: 30px;
+}
+
+.box2 {
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+    margin: auto auto auto 1000px;
+}
+
+.box2 .h2 {
+    padding: 10px 10px;
+}
+
+.box2 ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box2 li {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .box2 li {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.box2 li.next,
+.box2 li.previous {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.nav a {
+    text-decoration: none;
+    color: #cccccc;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    font-size: 1em;
+}
+
+.nav a:hover {
+    color: rgba(76, 182, 55, 0.904);
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    display: block;
+    padding: 20px 18px;
+}
+
+.weather .header {
+    border-radius: 5px 5px 0 0;
+    padding: 20px 0;
+    background: rgba(76, 182, 55, 0.904);
+    text-align: center;
+    color: #fff;
+    font-size: 3.125em;
+}
+
+.weather [class*="icon-"] {
+    position: relative;
+    top: 2px;
+}
+
+.weather article {
+    text-align: center;
+    padding: 5px 0;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.post img {
+    border-radius: 5px 5px 0 0;
+}
+
+.post .details {
+    padding: 10px 20px;
+}
+
+.post .details p {
+    line-height: 1.5em;
+}
+
+.boxreport {
+    padding: 10px;
+}
