@@ -38,7 +38,7 @@ include("auth_session.php");
             <img src="https://www.famousbirthdays.com/headshots/nala-cat-3.jpg" />
             <span class="username"><?php echo $_SESSION['username']; ?></span> <br/>
           </div>
-        <div class="edit"><a href="#">Edit Profile</a></div>
+        <div class="edit"><a href="#">แก้ไข ข้อมูล</a></div>
         
 
     </div>
