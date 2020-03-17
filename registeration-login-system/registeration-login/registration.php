@@ -40,7 +40,7 @@
         <input type="text" class="login-input" name="username" placeholder="Username" required />
         <input type="email" class="login-input" name="email" placeholder="Email Adress" required />
         <input type="password" class="login-input" name="password" placeholder="Password"required />
-        <input type="submit" name="submit" value="สมัครสมาชิค" class="login-button">
+        <input type="submit" name="submit" value="สมัครสมาชิก" class="login-button">
         <p class="link">เป็นสมาชิกอยู่แล้วหรือ?  <a href="login.php">เข้าสู่ระบบ</a> ที่นี่</p>
     </form>
 <?php
