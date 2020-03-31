@@ -6,25 +6,27 @@ include("auth_session.php");
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="des.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/des.css">
+  <title>Dashboard</title>
 </head>
 <body>
   <!-- SIDEBAR -->
 <div class="sidebar">
 
 <div class="user">
-    <a href="#"><img src="logo.png" /></a>
+    <a href="http://127.0.0.1:5500/index.html"><img src="img/logo.png" /></a>
 
 </div>
 
 <nav role='navigation'>
     <ul>
-        <li><a class="active" href="#">dashboard</a></li>
-        <li><a href="#">Product</a></li>
+        <li><a class="active" href="#">Dashboard</a></li>
+        <li><a href="http://localhost/Rafflaek/registeration-login/add.php">Product</a></li>
         <li><a href="#">Message</a></li>
         <li><a href="#">Settings</a></li>
-        <li><a href="#">Help</a></li>
+        <li><a href="http://localhost/Rafflaek/registeration-login/contact.php?firstName=&lastName=&email=&phone=&message=&submit=#">Help</a></li>
     </ul>
 </nav>
 
@@ -37,11 +39,14 @@ include("auth_session.php");
         <div class="identity">
             <img src="https://www.famousbirthdays.com/headshots/nala-cat-3.jpg" />
             <span class="username"><?php echo $_SESSION['username']; ?></span> <br/>
-          </div>
-        <div class="edit"><a href="#">แก้ไข ข้อมูล</a></div>
+          </div> <a href="#" class="btn btn-info btn-sm active" role="button" aria-pressed="true">แก้ไขข้อมูล</a>
         
-
-    </div>
+          
+       
+    
+</div>
+    
+    
     <span class="logout"><a href="logout.php"> Log out</span>
 </header>
   <!-- PAGE -->
@@ -55,15 +60,8 @@ include("auth_session.php");
             <h1>Report</h1>
             <a class="span1" target="_blank" href="#">รายะละเอียด</a>
         </div>
-        <div class="col span_1_of_3">
-            <h1> </h1>
-            <a class="" target="_blank" href="#"></a>
-        </div>
+        
 
-    </div>
-    <div class="section">
-        <div class="col span_3_of_3"></div>
-    </div>
 
 
 

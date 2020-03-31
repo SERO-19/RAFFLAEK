@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>สร้างบัญชี</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
 </head>
 <body>
 <?php
@@ -19,8 +19,9 @@
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
         $create_datetime = date("Y-m-d H:i:s");
-        $query    = "INSERT into `users` (username, password, email, create_datetime)
-                     VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
+        $query    = "INSERT into users (username, password, email, create_datetime)  
+        VALUES ('".$username."', '".md5($password) . "', '".$email."', '".$create_datetime."')";
+        
         $result   = mysqli_query($con, $query);
         if ($result) {
             echo "<div class='form'>
@@ -30,7 +31,7 @@
         } else {
             echo "<div class='form'>
                   <h3>Required fields are missing.</h3><br/>
-                  <p class='link'>Click here to <a href='registration.php'>registration</a> again.</p>
+                  <p class='link'>กดที่นี่เพื่อ <a href='registration.php'>ลงทะเบียน</a> ใหม่อีกครั้ง.</p>
                   </div>";
         }
     } else {
